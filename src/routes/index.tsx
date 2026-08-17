@@ -1,24 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Header } from "@/components/toyland/Header";
+import { Hero } from "@/components/toyland/Hero";
+import { Adventure } from "@/components/toyland/Adventure";
+import { BestSellers } from "@/components/toyland/BestSellers";
+import { PuzzleSection } from "@/components/toyland/PuzzleSection";
+import { WhyToyland } from "@/components/toyland/WhyToyland";
+import { FinalCta } from "@/components/toyland/FinalCta";
+import { Footer } from "@/components/toyland/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Toyland — Play. Imagine. Discover. | Premium Toy Store" },
+      {
+        name: "description",
+        content:
+          "Shop handpicked STEM kits, plush friends, wooden toys and craft sets at Toyland. Free shipping above ₹499, easy 15-day returns.",
+      },
+      { property: "og:title", content: "Toyland — Play. Imagine. Discover." },
+      {
+        property: "og:description",
+        content: "A magical world of toys for every child, every dream and every adventure.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Adventure />
+        <BestSellers />
+        <PuzzleSection />
+        <WhyToyland />
+        <FinalCta />
+      </main>
+      <Footer />
+      <Toaster />
+    </>
   );
 }
