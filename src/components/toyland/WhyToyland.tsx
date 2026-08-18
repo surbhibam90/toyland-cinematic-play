@@ -10,7 +10,7 @@ const ITEMS = [
 
 export function WhyToyland() {
   return (
-    <section id="why" className="relative bg-gradient-lavender pb-16 sm:pb-20">
+    <section id="why" className="relative bg-gradient-lavender p-16 sm:p-20">
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         <Reveal className="rounded-[2rem] bg-cream px-5 py-10 shadow-lift sm:px-10">
           <p className="text-center text-[0.7rem] font-extrabold tracking-[0.3em] text-navy/60">

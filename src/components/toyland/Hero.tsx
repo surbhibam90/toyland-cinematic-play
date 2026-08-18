@@ -20,7 +20,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto grid min-h-[60vh] max-w-[1400px] items-center gap-10 px-4 pb-28 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-36">
+      <div className="relative -top-24 mx-auto grid min-h-[60vh] max-w-[1400px] items-center gap-10 px-4 pb-28 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-36">
         <div className="max-w-xl">
           <p className="font-display text-lg text-sun/90 italic">
             A little more magic,
@@ -48,7 +48,7 @@ export function Hero() {
         </div>
 
         {/* Floating benefits panel */}
-        <ul className="w-full max-w-xs justify-self-end rounded-3xl border border-navy-foreground/10 bg-navy-deep/80 p-2 shadow-float backdrop-blur-md lg:w-56">
+        <ul className="hidden w-full max-w-xs justify-self-end rounded-3xl border border-navy-foreground/10 bg-navy-deep/80 p-2 shadow-float backdrop-blur-md lg:w-56">
           {BENEFITS.map(({ Icon, title, copy }, i) => (
             <li
               key={title}
