@@ -55,7 +55,7 @@ export function BestSellers() {
 
       <div className="relative mx-auto grid max-w-[1400px] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[22rem_minmax(0,1fr)]">
         <Reveal>
-          <p className="text-[0.7rem] font-extrabold tracking-[0.3em] text-navy/60">BEST SELLERS ⭐</p>
+          <p className="text-[0.7rem] font-extrabold tracking-[0.3em] text-navy/60">BEST SELLERS</p>
           <h2 className="mt-2 font-display text-3xl font-extrabold leading-tight text-navy sm:text-4xl">
             Loved by Kids.
             <br />

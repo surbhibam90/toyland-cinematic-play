@@ -14,7 +14,7 @@ export function WhyToyland() {
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         <Reveal className="rounded-[2rem] bg-cream px-5 py-10 shadow-lift sm:px-10">
           <p className="text-center text-[0.7rem] font-extrabold tracking-[0.3em] text-navy/60">
-            ✦ WHY TOYLAND? 👑
+            WHY TOYLAND?
           </p>
           <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {ITEMS.map(({ Icon, title, copy }, i) => (

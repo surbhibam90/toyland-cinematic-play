@@ -10,7 +10,7 @@ const BENEFITS = [
 
 export function Hero() {
   return (
-    <section id="home" className="relative isolate min-h-[92vh] overflow-hidden bg-navy-deep pt-24 lg:min-h-screen">
+    <section id="home" className="relative isolate min-h-[88vh] overflow-hidden bg-navy-deep pt-24 lg:min-h-screen">
       <PlayOnceVideo src={heroVideo.url} label="Toyland magical toy box animation" />
       <div className="absolute inset-0 bg-gradient-hero" aria-hidden />
       <div
@@ -18,12 +18,12 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto grid min-h-[68vh] max-w-[1400px] items-center gap-10 px-4 pb-28 pt-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-36">
+      <div className="relative mx-auto grid min-h-[60vh] max-w-[1400px] items-center gap-10 px-4 pb-28 pt-6 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:pb-36">
         <div className="max-w-xl">
           <p className="font-display text-lg text-sun/90 italic">
             A little more magic,
             <br />
-            every day. <span className="not-italic">✦</span>
+            every day.
           </p>
 
           <h1 className="mt-5 font-display text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
