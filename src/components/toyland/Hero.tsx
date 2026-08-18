@@ -14,7 +14,7 @@ export function Hero() {
       <PlayOnceVideo src={heroVideo.url} label="Toyland magical toy box animation" />
       <div className="absolute inset-0 bg-gradient-hero" aria-hidden />
       <div
-        className="absolute inset-x-0 bottom-0 h-24 bg-background [clip-path:ellipse(75%_100%_at_50%_100%)] sm:h-32"
+        className="absolute inset-x-0 bottom-0 h-24 bg-mint [clip-path:ellipse(78%_100%_at_50%_100%)] sm:h-32"
         aria-hidden
       />
 
