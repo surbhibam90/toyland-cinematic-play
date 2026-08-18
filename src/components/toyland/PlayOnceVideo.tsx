@@ -44,10 +44,15 @@ export function PlayOnceVideo({
     );
     io.observe(host);
 
-    host.addEventListener("mouseenter", play);
+    // The video layer sits behind overlays/content, so it never receives
+    // mouse events itself — listen on the section wrapping it instead.
+    const target: HTMLElement = host.parentElement ?? host;
+    target.addEventListener("mouseenter", play);
+    target.addEventListener("touchstart", play, { passive: true });
     return () => {
       io.disconnect();
-      host.removeEventListener("mouseenter", play);
+      target.removeEventListener("mouseenter", play);
+      target.removeEventListener("touchstart", play);
     };
   }, []);
 
