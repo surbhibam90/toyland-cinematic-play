@@ -1,6 +1,7 @@
 import { ArrowRight, RotateCcw, ShieldCheck, Truck } from "lucide-react";
 import heroVideo from "@/assets/hero.mp4.asset.json";
 import heroVideoWebm from "@/assets/hero.webm.asset.json";
+import heroPoster from "@/assets/hero-poster.jpg.asset.json";
 import { PlayOnceVideo } from "./PlayOnceVideo";
 
 const BENEFITS = [
@@ -11,8 +12,8 @@ const BENEFITS = [
 
 export function Hero() {
   return (
-    <section id="home" className="relative isolate min-h-[88vh] overflow-hidden bg-navy-deep pt-24 lg:min-h-screen">
-      <PlayOnceVideo src={heroVideo.url} webmSrc={heroVideoWebm.url} label="Toyland magical toy box animation" />
+    <section id="home" className="relative isolate min-h-[82vh] overflow-hidden bg-navy-deep pt-24 lg:min-h-screen">
+      <PlayOnceVideo src={heroVideo.url} webmSrc={heroVideoWebm.url} poster={heroPoster.url} label="Toyland magical toy box animation" />
       <div className="absolute inset-0 bg-gradient-hero" aria-hidden />
       <div
         className="absolute inset-x-0 bottom-0 h-24 bg-mint [clip-path:ellipse(78%_100%_at_50%_100%)] sm:h-32"

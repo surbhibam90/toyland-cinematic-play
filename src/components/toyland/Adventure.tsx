@@ -1,6 +1,7 @@
 import { ArrowRight, Car } from "lucide-react";
 import adventureVideo from "@/assets/adventure.mp4.asset.json";
 import adventureVideoWebm from "@/assets/adventure.webm.asset.json";
+import advPoster from "@/assets/adv-poster.jpg.asset.json";
 import explorers from "@/assets/cat-explorers.jpg";
 import wild from "@/assets/cat-wild.jpg";
 import creators from "@/assets/cat-creators.jpg";
@@ -21,6 +22,7 @@ export function Adventure() {
       <PlayOnceVideo
         src={adventureVideo.url}
         webmSrc={adventureVideoWebm.url}
+        poster={advPoster.url}
         label="Toy car driving through the Toyland scene"
         className="opacity-60"
       />
