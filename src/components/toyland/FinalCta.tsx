@@ -61,7 +61,7 @@ export function FinalCta() {
                 toast.error("Please enter a valid email address.");
                 return;
               }
-              toast.success("You're on the list! Magic incoming ✦");
+              toast.success("You're on the list! Magic incoming.");
               setEmail("");
             }}
           >
