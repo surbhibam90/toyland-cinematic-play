@@ -7,11 +7,13 @@ import { cn } from "@/lib/utils";
  */
 export function PlayOnceVideo({
   src,
+  webmSrc,
   className,
   poster,
   label,
 }: {
   src: string;
+  webmSrc?: string;
   className?: string;
   poster?: string;
   label: string;
@@ -54,7 +56,6 @@ export function PlayOnceVideo({
       <video
         ref={ref}
         className="h-full w-full object-cover"
-        src={src}
         poster={poster}
         muted
         playsInline
@@ -63,7 +64,10 @@ export function PlayOnceVideo({
         controls={false}
         disablePictureInPicture
         aria-label={label}
-      />
+      >
+        {webmSrc ? <source src={webmSrc} type="video/webm" /> : null}
+        <source src={src} type="video/mp4" />
+      </video>
     </div>
   );
 }
